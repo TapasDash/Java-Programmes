@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+	var intervalid;
+	
+	function startImageSlideShow()
+	{
+		intervalid = setInterval(setImage, 500);
+	}
+	
+	function stopImageSlideShow()
+	{
+		clearInterval(intervalid);
+	}
+	
+	function setImage()
+	{
+		var imgSrc = documnet.getElementById("image").getAttribute("src");
+		var currentImageNumber = imgSrc.substrng(imageSrc.lastIndexOf("/"));
+		if(currentImageNumber == 6)
+		{
+			currentImageNumber = 0;
+		}
+	}
+</script>
+</head>
+</html>
